@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles - Lanas de Sali</title>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="style.css".css">
+    <link rel="stylesheet" href="script.js">
+    <script src="sweetAlert.js"></script>
+    <link rel="shortcut icon" href="otras_imagenes/circle.webp" type="image/x-icon">
+    
+</head>
+
+<body>
+    <header class="header-products-detail">
+        <div class="menu container">
+            <a href="index.html" class="logo-2" title="Inicio"><img src="imagenes estandar/logo.png" alt="inicio" width="140" height="auto"></a>
+            <a href="productos.html"><h4>⬅️ Regresar</h4></a>
+            <input type="checkbox" id="menu" />
+            
+    
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imagenes estandar/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen </th>
+                                        <th>Nombre </th>
+                                        <th>Precio </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <a onclick="vaciarCarritoBoton()" href="#" id="vaciar-carrito" class="btn-2">Vaciar
+                                Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="imagenes prendas de lana/IMG_6359.jpg" alt="imagen" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="imagenes prendas de lana/IMG_6359.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imagenes prendas de lana/IMG_6362.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imagenes prendas de lana/IMG_6442.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imagenes prendas de lana/IMG_6341.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Conjunto de Lana</p>
+                <h1>Conjunto de Lana Verde</h1>
+                <h4>$75.900</h4>
+                <select name="" id="">
+                    <option value="">Seleccciona Talla</option>
+                    <option value="">L</option>
+                    <option value="">M</option>
+                    <option value="">S</option>
+                    <option value="">XS</option>
+                </select>
+                <input type="number" value="1">
+                <a onclick="agregarAlCarrito()" class="btn">Añadir al Carrito</a>
+                <h3>Detalles del Producto<i class="fa fa-indent"></i></h3>
+                <br>
+                <p>LLeva el par Guantes de lana color verde, 
+                    tejidos a mano con esmero, ofrecen suavidad y 
+                    calidez en cada uso. Ideales para añadir un toque
+                     de color a tus días fríos (Incluye prendas de 
+                     lana de las Fotos).</p>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        let productImg = document.getElementById("ProductImg")
+        let smallImg = document.getElementsByClassName("small-img")
+
+        smallImg[0].onclick = function () {
+            productImg.src = smallImg[0].src
+        }
+        smallImg[1].onclick = function () {
+            productImg.src = smallImg[1].src
+        }
+        smallImg[2].onclick = function () {
+            productImg.src = smallImg[2].src
+        }
+        smallImg[3].onclick = function () {
+            productImg.src = smallImg[3].src
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+
+</body>
+
+</html>
